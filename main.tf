@@ -11,4 +11,6 @@ provider "aws" {
   region = var.aws-region
 }
 
-
+module "my_instance" {
+    source = "./ec2_module"
+}
